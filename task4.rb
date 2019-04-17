@@ -1,9 +1,10 @@
-let = ('a'..'z').to_a
-
-h = {}
-
-for i in 0..25
-  if let[i] == 'a' || let[i] == 'e' || let[i] == 'i' || let[i] =='o' || let[i] =='u'  
-    h[let[i]] = i + 1
+letters = ('a'..'z').to_a
+vowels = ['a', 'i', 'e', 'o', 'u']
+vowel_number = {}
+letters.each.with_index(1) do |letter, number|
+  if vowels.include?(letter) 
+    vowel_number[letter] = number
   end
 end
+puts vowel_number
+

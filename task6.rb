@@ -1,9 +1,7 @@
 basket = {}
 every_price = {}
-
 name = ""
 sum = 0
-
 while name != "stop" do
   puts "Введите название товара или stop"
   name = gets.chomp
@@ -17,7 +15,7 @@ while name != "stop" do
     every_price[name] = price * quant
   end
 end
-
 puts basket
 puts every_price
 puts sum
+
